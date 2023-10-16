@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8a400bb1-88c4-4f52-b79f-21413c856977" name="Changes" comment="REFACTOR FreshHealth_NaverMap_V1.html">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FreshHealth_NaverMap_V1.html" beforeDir="false" afterPath="$PROJECT_DIR$/FreshHealth_NaverMap_V1.html" afterDir="false" />
-    </list>
+    <list default="true" id="8a400bb1-88c4-4f52-b79f-21413c856977" name="Changes" comment="REFACTOR FreshHealth_NaverMap_V1.html&#10;지도의 스타일 변경" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -64,7 +61,7 @@
       <workItem from="1697443889689" duration="140000" />
       <workItem from="1697444934214" duration="910000" />
       <workItem from="1697445872519" duration="1243000" />
-      <workItem from="1697457057409" duration="9000" />
+      <workItem from="1697457057409" duration="87000" />
     </task>
     <task id="LOCAL-00001" summary="ADD FreshHealth_NaverMap_V1.html">
       <option name="closed" value="true" />
@@ -90,7 +87,15 @@
       <option name="project" value="LOCAL" />
       <updated>1697446052033</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="REFACTOR FreshHealth_NaverMap_V1.html&#10;지도의 스타일 변경">
+      <option name="closed" value="true" />
+      <created>1697457083528</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1697457083528</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -110,6 +115,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="ADD FreshHealth_NaverMap_V1.html" />
     <MESSAGE value="REFACTOR FreshHealth_NaverMap_V1.html" />
-    <option name="LAST_COMMIT_MESSAGE" value="REFACTOR FreshHealth_NaverMap_V1.html" />
+    <MESSAGE value="REFACTOR FreshHealth_NaverMap_V1.html&#10;지도의 스타일 변경" />
+    <option name="LAST_COMMIT_MESSAGE" value="REFACTOR FreshHealth_NaverMap_V1.html&#10;지도의 스타일 변경" />
   </component>
 </project>
