@@ -63,6 +63,6 @@
 ```
 ### 2. AutoMaker
 * **`Marker_AutoMaker.py`**
-* **`GlucoseAu_AutoMaker.py`**
+* **`GlucoseAi_AutoMaker.py`**
 
 
