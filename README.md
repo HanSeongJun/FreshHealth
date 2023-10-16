@@ -3,7 +3,7 @@
 * **`FreshHealth_NaverMap.html`**
 <img width="844" alt="스크린샷 2023-10-16 오후 7 29 24" src="https://github.com/HanSeongJun/FreshHealth/assets/67749318/61fc3c3a-03ae-43f2-a10e-ee35aa73e3ee">
 
-**Marker Code**
+* **Marker Code**
 ```hthml
         <!-- #이름 마커 & 정보 START -->
         var #식당이름_변수명 = new naver.maps.Marker({
