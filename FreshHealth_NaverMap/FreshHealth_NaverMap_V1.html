@@ -9,27 +9,31 @@
   <style>
     @font-face {
       font-family: 'Pretendard-Regular';
-      src: url('fonts/Pretendard-Regular.otf') format('opentype'); /* 폰트 파일 경로 설정 */
+      src: url('Pretendard-Regular.otf') format('opentype'); /* 폰트 파일 경로 설정 */
     }
     .iw_inner, h3, p {
       font-family: 'Pretendard-Regular', sans-serif;
     }
+
     #mapContainer {
       position: relative;
       display: flex; /* Use flexbox to center the map */
-      justify-content: center; /* Center horizontally */
-      align-items: center; /* Center vertically */
+      justify-content: center; /* 지도를 왼쪽으로 정렬 */
+      align-items: flex-end; /* 지도를 아래로 정렬 */
       height: 400px;
     }
+
     #map {
       width: 50%;
       height: 100%;
     }
+
     #findLocation {
       font-family: 'Pretendard-Regular', sans-serif;
       position: absolute;
       bottom: 10px;
-      left: 430px;
+      left: 50%; /* 가운데 정렬을 위해 왼쪽 위치를 50%로 설정 */
+      transform: translateX(-50%); /* 가운데 정렬을 위한 이동 */
       background-color: rgb(80, 160, 96);
       color: white;
       border: none;
