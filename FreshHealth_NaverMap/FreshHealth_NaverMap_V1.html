@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+  <title>FreshHealth_NaverMap_V1</title>
+  <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=인증키"></script>
+
+  <style>
+    @font-face {
+      font-family: 'Pretendard-Regular';
+      src: url('fonts/Pretendard-Regular.otf') format('opentype'); /* 폰트 파일 경로 설정 */
+    }
+    .iw_inner, h3, p {
+      font-family: 'Pretendard-Regular', sans-serif;
+    }
+    #mapContainer {
+      position: relative;
+      display: flex; /* Use flexbox to center the map */
+      justify-content: center; /* Center horizontally */
+      align-items: center; /* Center vertically */
+      height: 400px;
+    }
+    #map {
+      width: 50%;
+      height: 100%;
+    }
+    #findLocation {
+      font-family: 'Pretendard-Regular', sans-serif;
+      position: absolute;
+      bottom: 10px;
+      left: 430px;
+      background-color: rgb(80, 160, 96);
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+
+</head>
+<body>
+<div id="mapContainer">
+  <div id="map"></div>
+  <button id="findLocation">내 위치 찾기</button>
+</div>
+
+<script type="text/javascript">
+  var HOME_PATH = window.HOME_PATH || '.';
+
+  // 지도 생성 및 초기화
+  var map = new naver.maps.Map('map', {
+    scaleControl: false,
+    logoControl: false,
+    mapDataControl: false,
+    zoomControl: true,
+    minZoom: 6
+  });
+
+  // 내 위치 찾기
+  document.getElementById('findLocation').addEventListener('click', function() {
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(function(position) {
+
+        var lat = position.coords.latitude;
+        var lng = position.coords.longitude;
+
+        var marker = new naver.maps.Marker({
+          position: new naver.maps.LatLng(lat, lng),
+          map: map,
+          icon : {
+            url: 'https://ifh.cc/g/LM6m8j.png', // 마커 이미지의 주소, ifh 업로드
+            scaledSize: new naver.maps.Size(30, 30),
+          }
+        });
+
+        map.setCenter(new naver.maps.LatLng(lat, lng));
+
+        // 마커 클릭 이벤트를 처리하여 정보창을 열 수 있도록 합니다.
+        naver.maps.Event.addListener(marker, "click", function() {
+          infowindow.open(map, marker);
+        });
+
+        // 지도를 클릭할 때 정보창을 닫도록 합니다.
+        naver.maps.Event.addListener(map, "click", function() {
+          infowindow.close();
+        });
+      }, function(error) {
+        if (error.code === error.PERMISSION_DENIED) {
+          alert("위치 엑세스가 거부되었습니다.");
+        }
+      });
+    } else {
+      alert("이 브라우저에서는 위치 정보를 지원하지 않습니다.");
+    }
+  });
+</script>
+</body>
