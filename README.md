@@ -62,7 +62,7 @@
         <!-- #이름 마커 & 정보 END -->
 ```
 ### 2. AutoMaker
-* **Marker_AutoMaker.py**
-* **GlucoseAu_AutoMaker.py**
+* **`Marker_AutoMaker.py`**
+* **`GlucoseAu_AutoMaker.py`**
 
 
