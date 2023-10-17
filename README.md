@@ -1,5 +1,6 @@
 # FreshHealth
 ### 1. 당 제로 맛집 추천 지도
+**1.1 Code**
 * **`FreshHealth_NaverMap.html`**
 <img width="844" alt="스크린샷 2023-10-16 오후 9 18 45" src="https://github.com/HanSeongJun/FreshHealth/assets/67749318/cec3f00a-0499-4157-b652-0f16522c9d6f">
 
@@ -67,7 +68,7 @@
 # python ver 3.0
 pip3 install pillow
 ```
-
+**2.1 Code**
 
 
 * **`Marker_AutoMaker.py`**
