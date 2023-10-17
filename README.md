@@ -62,7 +62,7 @@
         <!-- #이름 마커 & 정보 END -->
 ```
 ### 2. AutoMaker
-**Settings**
+**2.1 Settings**
 ```python
 # python ver 3.0
 pip3 install pillow
